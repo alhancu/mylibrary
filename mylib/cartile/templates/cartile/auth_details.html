@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="content border">
+
+    <h3>Author Details</h3>
+
+    <p class="camp">Name: {{ author.firstName }}
+    {{ author.lastName }}</p>
+    <p class="camp"> Nationality: {{ author.nationality}}</p>
+</div>
+{% endblock %}

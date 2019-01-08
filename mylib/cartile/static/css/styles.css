@@ -1,0 +1,15 @@
+h3 {
+    margin-left: 50px;
+}
+h2 {
+    margin-left: 20px;
+}
+
+
+body {
+    background-color: #eee;
+}
+.camp, .detalii {
+    margin-left: 50px;
+    font-size: 1.3em;
+}

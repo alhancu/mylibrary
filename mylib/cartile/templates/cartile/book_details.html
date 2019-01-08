@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="row">
+    <div class="col-md-auto">
+        <h3>Book Details</h3>
+    </div>
+    <div class="col-md-auto">
+        <a><button class="btn btn-outline-primary">Edit Book</button></a>
+    </div>
+</div>
+<div class="detalii">
+    <p><em>Title:</em> {{ book.title }}</p>
+    <p><em>Author:</em> {{ book.author }}</p>
+    <p><em>Description:</em> {{ book.description}}</p>
+    <p><em>Type:</em> {{ book.type }}</p>
+    <p><em>Location:</em> {{ book.location }}</p>
+</div>
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <h1>Title: {{ book.title }}</h1>
+    <div class="detalii">
+        <p><strong>Author: </strong> <a href="{% url 'author_details' book.author.pk %}">{{ book.author }} </a> </p>
+        <p><strong>Description: </strong>{{ book.description }}</p>
+        <p><strong>Type: </strong>{{ book.type }}</p>
+        <p><strong>Location: </strong>{{ book.location }}</p>
+    </div>
+{% endblock %}

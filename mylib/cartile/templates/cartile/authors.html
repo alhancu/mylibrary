@@ -1,0 +1,22 @@
+
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="camp">Authors</h3>
+<br>
+<hr>
+    <div class="row">
+        <div class="col-md-auto">
+            <h2>List of authors</h2>
+        </div>
+        <div class="col-md-auto">
+            <a href="{% url 'author_create' %}"><button class="btn btn-outline-primary">New Author</button></a>
+        </div>
+    </div>
+    <ol>
+        {% for author in authors %}
+            <li><a href="{{ author.get_absolute_url }}"/>{{ author.firstName }} {{ author.lastName }} </li>
+        {% endfor %}
+    </ol>
+{% endblock %}

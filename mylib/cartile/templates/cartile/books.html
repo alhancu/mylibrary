@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<h3 class="camp">Books</h3>
+<br>
+<hr>
+    <div class="row">
+        <div class="col-md-auto">
+            <h2>List of books</h2>
+        </div>
+        <div class="col-md-auto">
+            <a href="{% url 'book_create' %}"><button class="btn btn-outline-primary">New Book</button></a>
+        </div>
+    </div>
+    <ol>
+        {% for book in books %}
+            <li><a href="{{ book.get_absolute_url }}"/>{{ book.title }} </li>
+        {% endfor %}
+    </ol>
+{% endblock %}
